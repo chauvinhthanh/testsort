@@ -1,6 +1,6 @@
 const API_KEY = 'AIzaSyAWA42C_tlRfY-OlwwUxeYh4T9__WGmLmA'; // Thay YOUR_API_KEY bằng API Key của bạn
 const SHEET_ID = '1Kz0GxLahLLRO6YrAGtWtqARSZnqS3-heRJ41Pry-gkM'; // Thay YOUR_SHEET_ID bằng ID của Google Sheet
-const SHEET_NAME = 'Sheet1'; // Tên của sheet trong Google Sheets
+const SHEET_NAME = 'Sheet1!A:C'; // Tên của sheet trong Google Sheets
 
 document.getElementById('query').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
@@ -13,7 +13,7 @@ document.getElementById('searchBtn').addEventListener('click', search);
 function search() {
     const query = document.getElementById('query').value;
     if (query) {
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_NAME}?key=${API_KEY}`)
+        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/${SHEET_NAME}?key=${API_KEY}`)
             .then(response => response.json())
             .then(data => {
                 const rows = data.values;
