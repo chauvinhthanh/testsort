@@ -1,4 +1,4 @@
-const API_KEY = '3b7512afe383e89f697619924e9c8063abb9e787'; // Thay YOUR_API_KEY bằng API Key của bạn AIzaSyAWA42C_tlRfY-OlwwUxeYh4T9__WGmLmA
+const API_KEY = '113744945516420752972'; // Thay YOUR_API_KEY bằng API Key của bạn AIzaSyAWA42C_tlRfY-OlwwUxeYh4T9__WGmLmA
 const SHEET_ID = '1Kz0GxLahLLRO6YrAGtWtqARSZnqS3-heRJ41Pry-gkM'; // Thay YOUR_SHEET_ID bằng ID của Google Sheet
 const SHEET_NAME = 'Sheet1!A1:C'; // Tên của sheet trong Google Sheets
 
