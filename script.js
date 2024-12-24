@@ -13,7 +13,7 @@ document.getElementById('searchBtn').addEventListener('click', search);
 function search() {
     const query = document.getElementById('query').value;
     if (query) {
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/value/${SHEET_NAME}?key=${API_KEY}`)
+        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_NAME}?key=${API_KEY}`)
             .then(response => response.json())
             .then(data => {
                 const rows = data.values;
